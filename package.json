@@ -1,0 +1,22 @@
+{
+  "name": "juego-qqsm-backend",
+  "version": "0.1.0",
+  "description": "El juego de quien quiere ser millonario",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "juego",
+    "pregunta",
+    "respuesta"
+  ],
+  "author": "Angela Monsalve",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^14.3.2",
+    "express": "^4.17.2",
+    "mongoose": "^6.1.8"
+  }
+}
