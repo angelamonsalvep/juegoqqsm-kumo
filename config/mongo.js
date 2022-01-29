@@ -5,6 +5,13 @@ const dbConnect = () => {
     mongoose.connect(DB_URI, {
         useNewUrlparser: true,
         useUnifiedTopology: true
+    }, (err, res) => {
+        if(!err) {
+            console.log('***** CONEXIÓN EXITOSA *****')
+        } else {
+            console.log('***** ERROR DE CONEXIÓN *****')
+            console.log('error logged : '+err);
+        }
     })
 }
 
