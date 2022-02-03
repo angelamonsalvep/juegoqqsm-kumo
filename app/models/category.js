@@ -1,5 +1,5 @@
 const { Schema } = require('mongoose')
-const { Model } = require('mongoose')
+const { model } = require('mongoose')
 
 const categorieScheme = new Schema({
     description: {
@@ -11,4 +11,4 @@ const categorieScheme = new Schema({
         versionKey: false
     })
 
-module.exports = Model('category', categorieScheme)
+module.exports = model('category', categorieScheme)
