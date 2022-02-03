@@ -1,14 +1,15 @@
 const express = require('express')
 const router = express.Router()
+const checkOrigin = require('../middleware/origin')
 const { getItems, getItem, createItem, updateItem, deleteItem } = require('../controllers/categories')
 
-//TODO: localhost/users/ ---> LISTA
+//TODO: localhost/categories/ ---> LISTA
 router.get('/', getItems)
 
-//TODO: localhost/users/:id ---> DETALLE
+//TODO: localhost/categories/:id ---> DETALLE
 router.get('/:id', getItem)
 
-router.post('/', createItem)
+router.post('/', checkOrigin, createItem)
 
 router.patch('/:id', updateItem)
 
